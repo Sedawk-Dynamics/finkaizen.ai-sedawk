@@ -41,7 +41,7 @@ export default function ContactPage() {
               <div>
                 <div className="ilabel">Phone</div>
                 <div className="ival">
-                  <a href="tel:+919156645656">+91 91566 45656</a>
+                  <a href="tel:+919175797339">+91 91757 97339</a>
                 </div>
               </div>
             </div>
@@ -50,11 +50,11 @@ export default function ContactPage() {
               <div>
                 <div className="ilabel">Headquarters</div>
                 <div className="ival">
-                  Silezari, Sangadi, Arjuni More
+                  House No. 186, Silezari Tah, Arjuni/Mor
                   <br />
-                  Gondia, Maharashtra 441702
+                  Dist. Gondia, Bondgaon Devi, Gondia
                   <br />
-                  India
+                  Arjuni Morgaon, Maharashtra, India, 441701
                 </div>
                 <div className="ival" style={{ marginTop: '8px' }}>
                   <a

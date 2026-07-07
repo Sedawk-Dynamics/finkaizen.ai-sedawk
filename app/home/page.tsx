@@ -157,14 +157,6 @@ export default function HomePage() {
         <div className="wrap metrics-grid">
           <div className="reveal">
             <div className="metric-num">
-              <span className="count" data-to="4.2" data-prefix="$" data-suffix="B+" data-decimals="1">
-                $0B+
-              </span>
-            </div>
-            <div className="metric-lab">Assets Scanned</div>
-          </div>
-          <div className="reveal">
-            <div className="metric-num">
               <span className="count" data-to="99.8" data-suffix="%" data-decimals="1">
                 0%
               </span>
@@ -178,14 +170,6 @@ export default function HomePage() {
               </span>
             </div>
             <div className="metric-lab">API Latency</div>
-          </div>
-          <div className="reveal">
-            <div className="metric-num">
-              <span className="count" data-to="420" data-suffix="+">
-                0+
-              </span>
-            </div>
-            <div className="metric-lab">Models Deployed</div>
           </div>
         </div>
       </section>

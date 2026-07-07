@@ -46,6 +46,18 @@ export default function AboutPage() {
               <li>Build data ingestion and statement analysis tools that automate underwriting and collections.</li>
               <li>Create personal-assistant AI for finance, health and scheduling.</li>
               <li>Deliver end-to-end: data engineering, feature engineering, model building, validation and deployment.</li>
+              <li>
+                <strong>Business Intelligence (BI):</strong> &ldquo;Empowering smarter decisions through interactive
+                dashboards and real-time business insights.&rdquo;
+              </li>
+              <li>
+                <strong>Data Analytics:</strong> &ldquo;Transforming raw data into actionable insights that drive
+                business growth and operational excellence.&rdquo;
+              </li>
+              <li>
+                <strong>Data Science:</strong> &ldquo;Leveraging AI, machine learning, and predictive analytics to
+                solve complex business challenges.&rdquo;
+              </li>
             </ul>
           </div>
 
@@ -65,7 +77,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="card">
-              <div className="eyebrow">Why students should join</div>
+              <div className="eyebrow">Why should join</div>
               <p>
                 Hands-on experience building models used in real business processes. Exposure to the full ML lifecycle —
                 pipelines, deployment and monitoring. Mentorship from engineers and domain experts, with real ownership

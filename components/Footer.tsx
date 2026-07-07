@@ -27,11 +27,13 @@ export default function Footer({
               <img src="/FInkaizan%20png.png" alt="Finkaizen" className="brand-logo" />
             </div>
             <p className="addr">
-              Silezari, Sangadi, Arjuni More,
+              House No. 186, Silezari Tah, Arjuni/Mor,
               <br />
-              Gondia, Maharashtra 441702, India
+              Dist. Gondia, Bondgaon Devi, Gondia,
+              <br />
+              Arjuni Morgaon, Maharashtra, India, 441701
             </p>
-            <div className="contact-line pri">+91 9156645656</div>
+            <div className="contact-line pri">+91 9175797339</div>
             <div className="contact-line">info@finkaizenai.com</div>
           </div>
           <div>
@@ -56,9 +58,9 @@ export default function Footer({
             © <span data-year=""></span> Finkaizen Analytics. All rights reserved.
           </span>
           <div style={{ display: 'flex', gap: '24px' }}>
-            <span>Privacy</span>
-            <span>Security</span>
-            <span>Terms</span>
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/security">Security</Link>
+            <Link href="/terms">Terms</Link>
           </div>
         </div>
       </div>
