@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'Finkaizen — Engineered Intelligence for Kaizen',
     description: 'AI and analytics for credit risk, collections and personal finance.',
     type: 'website',
-  },
+  }, 
 };
 
 export default function IndexPage() {
