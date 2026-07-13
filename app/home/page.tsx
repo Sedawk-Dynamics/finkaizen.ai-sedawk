@@ -146,7 +146,7 @@ export default function HomePage() {
             </div>
             <div className="bcard reveal" data-module="pd">
               <h3>PD AI Services</h3>
-              <p>Statistical modelling of long-term Probability of Default.</p>
+              <p>Statistical modelling of long-term Probability of Default for provisioning and capital planning.</p>
             </div>
           </div>
         </div>
