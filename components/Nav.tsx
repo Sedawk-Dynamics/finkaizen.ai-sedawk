@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 const LINKS = [
-  { href: '/home', label: 'Home' },
+  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/products', label: 'Products' },
   { href: '/leadership', label: 'Leadership' },
@@ -16,16 +16,13 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Mirror app.js: index ("/") is treated as the home page so the Home link is active.
-  const normalized = pathname === '/' ? '/home' : pathname;
-
-  const isActive = (href: string) => href === normalized;
+  const isActive = (href: string) => href === pathname;
 
   return (
     <>
       <nav className="nav">
         <div className="wrap nav-inner">
-          <Link href="/home" className="brand">
+          <Link href="/" className="brand">
             <img src="/FInkaizan%20png.png" alt="Finkaizen" className="brand-logo" />
           </Link>
           <div className="nav-links">

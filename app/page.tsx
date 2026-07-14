@@ -101,11 +101,11 @@ export default function IndexPage() {
 
           <div className="bento">
             <div className="bcard lg reveal" data-module="app">
-              <div className="mod">MOD: APP_SCORE</div>
+              <div className="mod">MOD · APP_SCORE</div>
               <h3>Application Scorecard</h3>
               <p>
-                Real-time risk assessment for new lending applications using multi-dimensional signals and ML-driven
-                categorisation. Reduce manual underwriting effort with explainable decisions.
+                Real-time creditworthiness scoring at the moment of application. Combines bureau, behavioural and
+                alternative data into an explainable decision with feature attribution.
               </p>
               <div className="viz">
                 <div className="viz-grid"></div>
@@ -113,40 +113,47 @@ export default function IndexPage() {
               </div>
             </div>
             <div className="bcard reveal" data-module="beh">
+              <div className="mod">MOD · BEH</div>
               <h3>Behavioural Scorecard</h3>
-              <p>Monitor existing portfolios in real-time to predict delinquency patterns early.</p>
+              <p>Dynamic monitoring of existing portfolios — predicts delinquency patterns before they materialise.</p>
             </div>
             <div className="bcard reveal" data-module="stmt">
+              <div className="mod">MOD · STMT</div>
               <h3>Bank Statement Analyser</h3>
-              <p>OCR + AI parsing of multi-bank statements for cash-flow and risk checks.</p>
+              <p>OCR and AI-driven parsing of multi-bank statements with cash-flow analysis and red-flag detection.</p>
             </div>
             <div className="bcard reveal" data-module="bureau">
+              <div className="mod">MOD · BUR</div>
               <h3>Bureau Report Analyser</h3>
-              <p>Automated synthesis of cross-bureau data into a unified risk view.</p>
+              <p>Automated synthesis across multiple bureaus into a unified, actionable risk view.</p>
             </div>
             <div className="bcard reveal" data-module="prof">
-              <h3>Proficiency API</h3>
-              <p>Lightweight endpoints for rapid verification, KYC and enrichment.</p>
+              <div className="mod">MOD · PRO</div>
+              <h3>Loan Propensity API</h3>
+              <p>
+                ML-driven scores that predict each customer&apos;s likelihood to buy specific banking products for
+                smarter cross-sell decisions.
+              </p>
             </div>
             <div className="bcard wide reveal" data-module="ews">
-              <h3>Early Warning System · 90+ DPD</h3>
-              <p>
-                Predictive surfacing of default probability before the first missed payment, with prescriptive
-                next-best actions for collections teams.
-              </p>
+              <div className="mod">MOD · EWS</div>
+              <h3>Early Warning System</h3>
+              <p>Real-time ML alerts that predict and prevent credit, fraud, and operational risks for collection teams.</p>
               <div className="badges">
                 <span className="badge crit">Critical</span>
                 <span className="badge">v2.4</span>
-                <span className="badge">SOC-Ready</span>
+                <span className="badge">Audit-Ready</span>
               </div>
             </div>
             <div className="bcard reveal" data-module="rec">
-              <h3>Recovery AI Services</h3>
-              <p>Propensity-to-pay modelling for collection strategy optimisation.</p>
+              <div className="mod">MOD · REC</div>
+              <h3>90+DPD Recovery AI Services</h3>
+              <p>Propensity-to-pay modelling to prioritise queues and optimise collection strategy.</p>
             </div>
             <div className="bcard reveal" data-module="pd">
+              <div className="mod">MOD · PD</div>
               <h3>PD AI Services</h3>
-              <p>Statistical modelling of long-term Probability of Default.</p>
+              <p>Statistical modelling of long-term Probability of Default for provisioning and capital planning.</p>
             </div>
           </div>
         </div>
@@ -170,6 +177,44 @@ export default function IndexPage() {
               </span>
             </div>
             <div className="metric-lab">API Latency</div>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT PREVIEW */}
+      <section className="section">
+        <div className="wrap">
+          <div className="section-head reveal">
+            <div>
+              <div className="eyebrow">About</div>
+              <h2 className="h2">Practical AI that earns institutional trust.</h2>
+              <p className="section-sub">
+                We pair deep banking domain knowledge with robust data science and engineering to ship models that are
+                accurate, explainable and measured by business impact — not benchmark scores.
+              </p>
+            </div>
+            <Link href="/about" className="btn btn-ghost">
+              About Finkaizen →
+            </Link>
+          </div>
+
+          <div className="bento">
+            <div className="bcard reveal">
+              <h3>Risk &amp; Scoring Models</h3>
+              <p>Scorecards, probability-of-default and early-warning systems built for real lending decisions.</p>
+            </div>
+            <div className="bcard reveal">
+              <h3>Data &amp; Statement Analysis</h3>
+              <p>Ingestion and statement-parsing tools that automate underwriting and collections at scale.</p>
+            </div>
+            <div className="bcard reveal">
+              <h3>Business Intelligence</h3>
+              <p>Interactive dashboards and real-time insights that turn raw data into smarter decisions.</p>
+            </div>
+            <div className="bcard reveal">
+              <h3>Data Science &amp; Analytics</h3>
+              <p>AI, machine learning and predictive analytics that solve complex business challenges.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -201,6 +246,9 @@ export default function IndexPage() {
                   </div>
                 </div>
               </div>
+              <Link href="/leadership" className="btn btn-ghost" style={{ marginTop: '32px' }}>
+                Meet the Leadership →
+              </Link>
             </div>
 
             <div className="mission-card reveal">

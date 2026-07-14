@@ -385,11 +385,11 @@ export default function AppScripts() {
         },
         prof: {
           mod: 'MOD · PRO',
-          title: 'Proficiency API',
-          sub: 'Verification & Enrichment',
+          title: 'Loan Propensity API',
+          sub: 'Cross-sell Propensity',
           overview:
-            'Lightweight, low-latency endpoints for identity verification, KYC and data enrichment — built to slot into any origination or servicing flow.',
-          card: { type: 'latency', rps: 200, p50: '12 MS', tag: 'Live Throughput' },
+            'ML-driven scores that predict each customer’s likelihood to buy specific banking products for smarter cross-sell decisions.',
+          card: { type: 'donut', pct: 64, legend: ['Loans', 'Cards', 'Insurance'], tag: 'Product Mix' },
           metrics: [
             { tab: 'Regular', value: '200 RPS', cap: 'Sustained Throughput', tag: 'Capacity', series: 'high' },
             { tab: 'Latency', value: '12ms', cap: 'P50 Response Time', tag: 'Speed', series: 'down' },
@@ -693,8 +693,16 @@ export default function AppScripts() {
         const data = MODULES[m].metrics[i];
         (overlay!.querySelector('.metric-big') as HTMLElement).textContent = data.value;
         (overlay!.querySelector('.metric-cap') as HTMLElement).textContent = data.cap;
-        drawMetricChart(overlay!.querySelector('.metric-chart') as HTMLElement, data.series);
-        (overlay!.querySelector('.chart-tag') as HTMLElement).textContent = data.tag;
+        const chartHost = overlay!.querySelector('.metric-chart') as HTMLElement;
+        const card = MODULES[m].card;
+        // Modules whose card is a donut render the same donut in the modal so the
+        // card and its popup stay visually consistent.
+        if (card && card.type === 'donut') {
+          renderDonut(chartHost, card.pct!, card.legend!, card.tag);
+        } else {
+          drawMetricChart(chartHost, data.series);
+          (overlay!.querySelector('.chart-tag') as HTMLElement).textContent = data.tag;
+        }
         overlay!.querySelectorAll('.mtab').forEach((t, ti) => t.classList.toggle('active', ti === i));
       };
 
